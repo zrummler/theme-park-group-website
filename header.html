@@ -76,7 +76,12 @@
       </li>
     </ul>
   </div>
-  <a href="javascript:void(0);" id="hamburgeclass="icon" onclick="myFunction()">
+  <a
+    href="javascript:void(0);"
+    id="hamburger"
+    class="icon"
+    onclick="myFunction()"
+  >
     <i class="fa fa-bars"></i>
   </a>
 </div>
@@ -85,10 +90,21 @@
   function myFunction() {
     console.log("toggle!");
     var x = document.querySelector(".nav");
-    if (x.style.display === "flex") {
+    var xDisplay = window.getComputedStyle(x).getPropertyValue("display");
+    console.log(xDisplay);
+    if (xDisplay === "flex") {
       x.style.display = "none";
     } else {
       x.style.display = "flex";
+    }
+
+    var y = document.querySelector(".lefthand-logo");
+    var yDisplay = window.getComputedStyle(y).getPropertyValue("display");
+    console.log(yDisplay);
+    if (yDisplay === "flex") {
+      y.style.display = "none";
+    } else {
+      y.style.display = "flex";
     }
   }
 </script>
