@@ -1,3 +1,9 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Coiny&family=Montserrat&family=Sono&display=swap"
+  rel="stylesheet"
+/>
 <link href="header-styles.css" rel="stylesheet" />
 
 <div class="header-container">
@@ -9,7 +15,27 @@
     </div>
     <h1 class="wsite-title">Theme Park Group</h1>
   </div>
-  <div class="nav desktop-nav">
+
+  <div class="hamburger">
+    <input
+      type="image"
+      id="menu-toggle"
+      class="menu-toggle"
+      src="hamburger.png"
+      alt="Hamburger Icon"
+    />
+  </div>
+  <script>
+    var menuToggle = document.getElementById("menu-toggle");
+
+    menuToggle.addEventListener("click", function () {
+      // Toggle the checkbox's checked state
+      console.log("Checking!\n");
+      menuToggle.checked = !menuToggle.checked;
+    });
+  </script>
+
+  <div class="nav">
     <ul class="wsite-menu">
       <li
         id="pg0"
@@ -65,5 +91,4 @@
       </li>
     </ul>
   </div>
-  <label class="hamburger"><span></span></label>
 </div>
