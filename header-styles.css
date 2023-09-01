@@ -46,6 +46,10 @@
   margin-right: 20px;
   text-decoration: none;
   color: white;
+
+  /* Add padding to create a larger white box around text */
+  padding: 5px 15px; /* Adjust these values as needed */
+  transition: outline 0.3s; /* Add a smooth transition effect */
 }
 
 /* Style for the content below the header */
@@ -60,4 +64,9 @@
 
 .index-content {
   margin-top: 70px;
+}
+
+/* Style for the white box on hover */
+.wsite-menu-item:hover {
+  outline: 3px solid white; /* Add a white border on hover */
 }
