@@ -16,7 +16,19 @@
             document.getElementById("header-placeholder").innerHTML = data;
           });
       </script>
-      <p>Contact Us!</p>
+      <div class="contact-main">
+        <p>We would LOVE to hear from you!!</p>
+        <p>Feel free to email us at *INSERT EMAIL*</p>
+      </div>
+      <div id="footer-placeholder"></div>
+      <script>
+        // Fetch and insert the navigation menu
+        fetch("footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+          });
+      </script>
     </div>
   </body>
 </html>
