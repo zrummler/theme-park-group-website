@@ -21,6 +21,7 @@
 
 /* Style for the title */
 .wsite-title {
+  font-family: "Montserrat";
   font-size: 20px;
   color: white;
   margin-left: 10px;
@@ -43,6 +44,7 @@
 }
 
 .wsite-menu-item {
+  font-family: "Montserrat";
   margin-right: 20px;
   text-decoration: none;
   color: white;
@@ -69,4 +71,14 @@
 /* Style for the white box on hover */
 .wsite-menu-item:hover {
   outline: 3px solid white; /* Add a white border on hover */
+}
+
+/* for styling with respect to other modules */
+.page-container {
+  padding-top: 80px; /* Adjust the value to match the header height */
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
