@@ -4,6 +4,10 @@
   href="https://fonts.googleapis.com/css2?family=Coiny&family=Montserrat&family=Sono&display=swap"
   rel="stylesheet"
 />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
 <link href="header-styles.css" rel="stylesheet" />
 
 <div class="header-container">
@@ -15,25 +19,6 @@
     </div>
     <h1 class="wsite-title">Theme Park Group</h1>
   </div>
-
-  <div class="hamburger">
-    <input
-      type="image"
-      id="menu-toggle"
-      class="menu-toggle"
-      src="hamburger.png"
-      alt="Hamburger Icon"
-    />
-  </div>
-  <script>
-    var menuToggle = document.getElementById("menu-toggle");
-
-    menuToggle.addEventListener("click", function () {
-      // Toggle the checkbox's checked state
-      console.log("Checking!\n");
-      menuToggle.checked = !menuToggle.checked;
-    });
-  </script>
 
   <div class="nav">
     <ul class="wsite-menu">
@@ -91,4 +76,19 @@
       </li>
     </ul>
   </div>
+  <a href="javascript:void(0);" id="hamburgeclass="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 </div>
+
+<script>
+  function myFunction() {
+    console.log("toggle!");
+    var x = document.querySelector(".nav");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+    }
+  }
+</script>
