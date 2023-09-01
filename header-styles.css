@@ -61,11 +61,6 @@
       outline: 3px solid white; /* Add a white border on hover */
     }
   }
-
-  /* Style for the hamburger button */
-  .icon {
-    display: none;
-  }
 }
 
 @media (max-width: 1000px) {
@@ -74,14 +69,6 @@
   .nav {
     display: none;
   }
-
-  /* Style the hamburger button on mobile */
-  .icon {
-    display: flex;
-    color: white;
-  }
-
-  /* Style the mobile navigation menu */
 
   /* Style for the mobile menu items */
   .nav .wsite-menu {
