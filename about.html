@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>About</title>
   </head>
   <body>
+    <!--Page container-->
     <div class="page-container">
+      <!--Grab the header-->
       <div id="header-placeholder"></div>
       <script>
-        // Fetch and insert the navigation menu
         fetch("header.html")
           .then((response) => response.text())
           .then((data) => {
@@ -17,7 +18,8 @@
           });
       </script>
 
-      <div class="about-group-photo">
+      <!--Image of this page-->
+      <div class="about-image">
         <p>What we Do!</p>
         <div class="image-wrapper">
           <img
@@ -29,6 +31,8 @@
         </div>
         <p>Group Photo!</p>
       </div>
+
+      <!--Content of this page-->
       <div class="about-content">
         <p>
           We are a club full of theme park enthusiasts who spend our club times
@@ -39,9 +43,10 @@
           to best discounts for the season! We might also visit a park or two!!
         </p>
       </div>
+
+      <!--Grab the footer-->
       <div id="footer-placeholder"></div>
       <script>
-        // Fetch and insert the navigation menu
         fetch("footer.html")
           .then((response) => response.text())
           .then((data) => {

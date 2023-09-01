@@ -3,26 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact</title>
   </head>
   <body>
     <div class="page-container">
+      <!--Grab the header from header.html-->
       <div id="header-placeholder"></div>
       <script>
-        // Fetch and insert the navigation menu
         fetch("header.html")
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("header-placeholder").innerHTML = data;
           });
       </script>
-      <div class="contact-main">
+
+      <!--Space for if we ever want an image on this page-->
+      <div class="contact-image"></div>
+
+      <!--Content of this page-->
+      <div class="contact-content">
         <p>We would LOVE to hear from you!!</p>
         <p>Feel free to email us at *INSERT EMAIL*</p>
       </div>
+
+      <!--Grab the footer from footer.html-->
       <div id="footer-placeholder"></div>
       <script>
-        // Fetch and insert the navigation menu
         fetch("footer.html")
           .then((response) => response.text())
           .then((data) => {

@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Members</title>
   </head>
   <body>
+    <!-- Page wrapper -->
     <div class="page-container">
+      <!--Grab the header from header.html-->
       <div id="header-placeholder"></div>
       <script>
         // Fetch and insert the navigation menu
@@ -17,7 +19,11 @@
           });
       </script>
 
-      <div class="member-main">
+      <!--Space for if we ever want an image on this page-->
+      <div class="member-image"></div>
+
+      <!--Content of this page-->
+      <div class="member-content">
         <p>
           Our club is constantly growing! Below are some of our club Members!
         </p>
@@ -35,9 +41,10 @@
           </li>
         </ul>
       </div>
+
+      <!--Grab the footer from footer.html-->
       <div id="footer-placeholder"></div>
       <script>
-        // Fetch and insert the navigation menu
         fetch("footer.html")
           .then((response) => response.text())
           .then((data) => {
