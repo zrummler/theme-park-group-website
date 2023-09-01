@@ -6,17 +6,34 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <div id="navigation-placeholder"></div>
+    <div class="page-container">
+      <div id="header-placeholder"></div>
       <script>
         // Fetch and insert the navigation menu
-        fetch("boilerplate.html")
+        fetch("header.html")
           .then((response) => response.text())
           .then((data) => {
-            document.getElementById("navigation-placeholder").innerHTML = data;
+            document.getElementById("header-placeholder").innerHTML = data;
           });
       </script>
-      <p>Our Members!</p>
+
+      <div class="member-main">
+        <p>
+          Our club is constantly growing! Below are some of our club Members!
+        </p>
+      </div>
+      <div class="member-content">
+        <ul class="member-list">
+          <li class="member">
+            <img
+              src="theresa.jpeg"
+              width="250"
+              height="300"
+              alt="Theresa Quinto"
+            />
+          </li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

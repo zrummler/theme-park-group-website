@@ -6,17 +6,39 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <div id="navigation-placeholder"></div>
+    <div class="page-container">
+      <div id="header-placeholder"></div>
       <script>
         // Fetch and insert the navigation menu
-        fetch("boilerplate.html")
+        fetch("header.html")
           .then((response) => response.text())
           .then((data) => {
-            document.getElementById("navigation-placeholder").innerHTML = data;
+            document.getElementById("header-placeholder").innerHTML = data;
           });
       </script>
-      <p>What we Do!</p>
+
+      <div class="about-group-photo">
+        <p>What we Do!</p>
+        <div class="image-wrapper">
+          <img
+            src="group_photo.jpeg"
+            width="400"
+            height="300"
+            alt="Group Photo on Tufts Campus"
+          />
+        </div>
+        <p>Group Photo!</p>
+      </div>
+      <div class="about-content">
+        <p>
+          We are a club full of theme park enthusiasts who spend our club times
+          discussing amusement park news while enjoying cookies! This club is
+          NOT isolated to engineering students, we pride ourselves in having
+          students from all areas of study! We talk about everything theme parks
+          ranging from manufacturers, parks, conferences, business strategies,
+          to best discounts for the season! We might also visit a park or two!!
+        </p>
+      </div>
     </div>
   </body>
 </html>

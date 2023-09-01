@@ -8,18 +8,43 @@
   </head>
   <body>
     <!-- Body wrapper -->
-    <div class="container">
-      <!-- Topmost banner -->
-      <div id="navigation-placeholder"></div>
+    <div class="page-container">
+      <!-- Logo and navigation banner -->
+      <div id="header-placeholder"></div>
       <script>
         // Fetch and insert the navigation menu
-        fetch("boilerplate.html")
+        fetch("header.html")
           .then((response) => response.text())
           .then((data) => {
-            document.getElementById("navigation-placeholder").innerHTML = data;
+            document.getElementById("header-placeholder").innerHTML = data;
           });
       </script>
-      <p>Home!</p>
+
+      <!-- Main page image -->
+      <div class="main-image">
+        <div class="image-wrapper">
+          <img
+            src="candymonium.jpeg"
+            width="400"
+            height="300"
+            alt="Candymonium at Hersheypark"
+          />
+        </div>
+        <p>Tufts Theme Park Group!</p>
+        <p>Home!</p>
+      </div>
+
+      <div class="main-content"></div>
+
+      <div id="footer-placeholder"></div>
+      <script>
+        // Fetch and insert the navigation menu
+        fetch("footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+          });
+      </script>
     </div>
   </body>
 </html>
