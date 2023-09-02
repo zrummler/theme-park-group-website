@@ -1,0 +1,56 @@
+/* Style for the header container */
+.footer-container {
+  margin-top: auto; /* Push the footer to the bottom */
+  background: #408cdc;
+  padding: 10px 30px;
+  z-index: 12;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between; /* This will separate the elements */
+  align-items: center; /* Vertically center the elements */
+}
+
+.footer-message {
+  font-family: "Montserrat";
+  font-size: 20px;
+  color: white;
+  margin-left: 10px;
+}
+
+/* Style for the email form container */
+.email-form {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the email input field */
+.email-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px; /* Adjust the width as needed */
+  margin-right: 10px; /* Space between input and button */
+}
+
+.email-input::placeholder {
+  color: #408cdc; /* Placeholder text color */
+}
+
+/* Style for the subscribe button */
+.subscribe-button {
+  font-family: "Montserrat";
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #408cdc;
+  box-shadow: none; /* Remove the box shadow */
+
+  /* Add padding to create a larger white box around text */
+  padding: 5px 15px; /* Adjust these values as needed */
+  transition: outline 0.3s; /* Add a smooth transition effect */
+  box-shadow: none; /* Remove the box shadow */
+}
+
+.subscribe-button:hover {
+  outline: 3px solid white;
+}

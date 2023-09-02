@@ -1,4 +1,4 @@
-* {
+s * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,6 +6,7 @@
 
 /* Style for the page container */
 .page-container {
+  padding-top: 80px;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -15,7 +16,7 @@
   padding-bottom: 80px;
 }
 
-.index-image {
+.about-image {
   position: relative;
   flex-grow: 1; /* Allow the image to grow and take available space */
   height: 0; /* Set initial height to 0 */
@@ -24,8 +25,8 @@
 }
 
 /* Style for the full-page image */
-.index-image img {
-  width: 100%;
+.about-image img {
+  max-width: 100%;
   height: auto;
   object-fit: cover; /* Scale the image to cover the entire container */
   position: absolute;
@@ -44,15 +45,3 @@
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   padding: 20px; /* Add padding to the text for readability */
 }
-
-/* Style for the text elements */
-.image-title {
-  font-size: 36px;
-  margin-bottom: 10px; /* Adjust as needed */
-}
-
-.image-subtitle {
-  font-size: 18px;
-}
-
-/* Rest of your CSS styles */
