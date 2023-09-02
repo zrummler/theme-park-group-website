@@ -52,17 +52,16 @@
   transform: translate(-50%, -50%); /* Center the overlay precisely */
   color: white;
   text-align: center;
-  padding: 20px; /* Add padding to the text for readability */
+  padding: 10px; /* Add padding to the text for readability */
 }
 
 /* Style for the text elements */
 .image-title {
-  font-size: 36px;
+  font-size: 72px;
+  text-transform: uppercase;
+  font-weight: bold;
   margin-bottom: 10px; /* Adjust as needed */
-}
-
-.image-subtitle {
-  font-size: 18px;
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .index-footer {
