@@ -29,6 +29,34 @@
   padding: 100px;
 }
 
+.member-entry {
+  font-size: 20px;
+  line-height: 1.4;
+  background-color: #f1ebe5;
+  margin-bottom: 16px;
+  padding: 16px 24px;
+  letter-spacing: -1px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* suggested by someone */
+  gap: 24px;
+}
+
+.member-entry img {
+  border-radius: 8px;
+}
+
+.member-blob {
+  background-color: #e8e4de;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .member-footer {
   position: absolute;
   bottom: 0;
