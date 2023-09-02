@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat";
 }
 
 /* Style for the page container */
@@ -22,4 +23,13 @@
   width: 100%;
   height: 100px; /* Set the height as needed */
   z-index: 999; /* Ensure it's above other elements */
+}
+
+.contact-content {
+  position: fixed;
+  padding: 100px;
+}
+
+.contact-footer {
+  margin-bottom: 0;
 }
