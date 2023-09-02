@@ -36,14 +36,12 @@
       </div>
 
       <!--Grab the footer from footer.html-->
-      <div id="footer-placeholder"></div>
-      <script>
-        fetch("footer.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("footer-placeholder").innerHTML = data;
-          });
-      </script>
+      <iframe
+        class="contact-footer"
+        src="footer.html"
+        frameborder="0"
+        scrolling="yes"
+      ></iframe>
     </div>
   </body>
 </html>

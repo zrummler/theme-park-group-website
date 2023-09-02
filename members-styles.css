@@ -30,4 +30,11 @@
 }
 
 .member-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background: #408cdc;
+  box-sizing: border-box;
 }
