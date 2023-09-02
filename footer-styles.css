@@ -1,7 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
 /* Style for the header container */
 .footer-container {
   height: 80px;
-  margin-top: auto; /* Push the footer to the bottom */
+  bottom: 0;
   background: #408cdc;
   padding: 10px 30px;
   z-index: 12;
