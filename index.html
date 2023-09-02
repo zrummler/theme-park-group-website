@@ -6,6 +6,7 @@
     <!-- Add links to fonts here -->
 
     <!-- Add links to CSS files here -->
+
     <link rel="stylesheet" href="index_styles.css" />
     <title>Theme Park Group -- Home</title>
   </head>
@@ -13,15 +14,14 @@
     <!-- Page wrapper -->
     <div class="page-container">
       <!--Grab the header-->
-      <div id="header-placeholder"></div>
-      <script>
-        // Fetch and insert the navigation menu
-        fetch("header.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("header-placeholder").innerHTML = data;
-          });
-      </script>
+      <iframe
+        class="index-header"
+        src="header.html"
+        width="100%"
+        height="100"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
 
       <!--Image of this page-->
       <div class="index-image">

@@ -7,15 +7,15 @@
   </head>
   <body>
     <div class="page-container">
-      <!--Grab the header from header.html-->
-      <div id="header-placeholder"></div>
-      <script>
-        fetch("header.html")
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("header-placeholder").innerHTML = data;
-          });
-      </script>
+      <!--Grab the header-->
+      <iframe
+        class="contact-header"
+        src="header.html"
+        width="100%"
+        height="100"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
 
       <!--Space for if we ever want an image on this page-->
       <div class="contact-image"></div>
