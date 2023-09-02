@@ -1,4 +1,4 @@
-s * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,7 +15,7 @@ s * {
   padding-bottom: 80px;
 }
 
-.members-header {
+.contact-header {
   position: fixed;
   top: 0;
   left: 0;
