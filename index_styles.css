@@ -29,15 +29,16 @@
   position: relative;
   flex-grow: 1; /* Allow the image to grow and take available space */
   height: 0; /* Set initial height to 0 */
-  padding-bottom: 56.25%; /* Maintain a 16:9 aspect ratio for the image */
+
+  padding-bottom: 100%; /* Maintain a 16:9 aspect ratio for the image */
   overflow: hidden;
 }
 
 /* Style for the full-page image */
 .index-image img {
   width: 100%;
-  height: auto;
-  object-fit: cover; /* Scale the image to cover the entire container */
+  height: 100%; /* Use 100% height to fill the available space */
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
