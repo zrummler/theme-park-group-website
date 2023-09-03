@@ -63,14 +63,6 @@
   background-color: #ddecef;
 }
 
-.name {
-  font-size: 20px;
-}
-
-.role {
-  font-size: 15px;
-}
-
 .member-blob {
   background-color: #ddecef;
   padding: 0px;
@@ -78,6 +70,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.blob-title {
+  font-size: 22px;
 }
 
 .member-footer {
