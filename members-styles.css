@@ -32,6 +32,8 @@
 
 .member-content {
   margin-left: 0px;
+  font-size: 24px;
+  padding: 10px;
 }
 
 .member-entry {
@@ -65,7 +67,7 @@
 
 .member-blob {
   background-color: #ddecef;
-  padding: 0px;
+  padding: 10px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
