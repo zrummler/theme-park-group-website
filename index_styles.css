@@ -29,7 +29,7 @@
   position: relative;
   flex-grow: 1; /* Allow the image to grow and take available space */
   height: 0; /* Set initial height to 0 */
-
+  text-align: center;
   padding-bottom: 100%; /* Maintain a 16:9 aspect ratio for the image */
   overflow: hidden;
 }
@@ -49,15 +49,17 @@
   position: absolute;
   top: 50%; /* Place the overlay vertically centered */
   left: 50%; /* Place the overlay horizontally centered */
-  transform: translate(-50%, -50%); /* Center the overlay precisely */
   color: white;
-  text-align: center;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translate(-50%, 0);
   padding: 10px; /* Add padding to the text for readability */
 }
 
 /* Style for the text elements */
 .image-title {
-  font-size: 72px;
+  font-size: 84px;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 10px; /* Adjust as needed */

@@ -12,6 +12,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  align-items: center;
   min-height: 100vh; /* 100% of the viewport height */
   padding-bottom: 80px;
 }
@@ -25,9 +26,19 @@
   z-index: 999; /* Ensure it's above other elements */
 }
 
+.contact-image {
+  min-height: 80px;
+}
+
 .contact-content {
-  position: fixed;
-  padding: 100px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 24px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-footer {
