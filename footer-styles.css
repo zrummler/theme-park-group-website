@@ -36,7 +36,6 @@ p {
 
 .footer-message {
   font-family: "Montserrat";
-  font-size: 20px;
   color: white;
   margin-left: 10px;
 }
@@ -76,4 +75,21 @@ p {
 
 .subscribe-button:hover {
   outline: 3px solid white;
+}
+
+@media (max-width: 575px) {
+  h1 {
+    margin: 2px;
+    font-size: 20px; /* Adjust font size as needed */
+  }
+
+  /* Style for p elements */
+  p {
+    margin: 2px;
+    font-size: 12px; /* Adjust font size as needed */
+  }
+
+  a {
+    font-size: 12px;
+  }
 }
