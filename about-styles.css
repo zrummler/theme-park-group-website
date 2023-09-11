@@ -26,11 +26,7 @@
 }
 
 .about-image {
-  position: relative;
-  flex-grow: 1; /* Allow the image to grow and take available space */
-  height: 0; /* Set initial height to 0 */
-  padding-bottom: 56.25%; /* Maintain a 16:9 aspect ratio for the image */
-  overflow: hidden;
+  min-height: 80px;
 }
 
 /* Style for the full-page image */
@@ -45,6 +41,7 @@
 
 /* Style for the image overlay */
 .image-overlay {
+  display: none;
   position: absolute;
   top: 50%; /* Place the overlay vertically centered */
   left: 50%; /* Place the overlay horizontally centered */
@@ -66,7 +63,7 @@
 
 .about-content {
   display: flex;
-  margin: 100px;
+  margin: 50px;
   font-size: 24px;
 }
 
@@ -79,4 +76,10 @@
   background: #408cdc;
   box-sizing: border-box;
   z-index: 1000; /* Ensure it's above other elements */
+}
+
+@media (max-width: 995px) {
+  .about-content {
+    margin: 20px;
+  }
 }

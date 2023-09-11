@@ -76,3 +76,21 @@
   box-sizing: border-box;
   z-index: 1000; /* Ensure it's above other elements */
 }
+
+@media (max-width: 995px) {
+  .image-title {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 715px) {
+  .image-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 550px) {
+  .image-title {
+    font-size: 32px;
+  }
+}
