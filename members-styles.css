@@ -12,6 +12,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: center; /* Horizontally center the box */
   align-items: center;
   min-height: 100vh; /* 100% of the viewport height */
   padding-bottom: 80px;
@@ -34,13 +35,16 @@
   margin-left: 0px;
   font-size: 24px;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Horizontally center the box */
 }
 
 .member-entry {
   font-size: 20px;
   line-height: 1.4;
   background-color: #f5f3f1;
-  margin-bottom: 16px;
+  margin: 16px;
   padding: 16px 24px;
   letter-spacing: -1px;
   border-radius: 8px;
@@ -48,7 +52,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 18px;
 }
 
 .image-and-name {
@@ -103,4 +107,21 @@
   background: #408cdc;
   box-sizing: border-box;
   z-index: 1000; /* Ensure it's above other elements */
+}
+
+@media (max-width: 995px) {
+  .member-facts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .member-entry {
+    margin: 16px auto; /* Add this line */
+    max-width: 600px;
+    justify-content: center;
+  }
+
+  .member-blob {
+    padding: 10px;
+  }
 }
