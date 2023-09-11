@@ -74,4 +74,5 @@
   width: 100%;
   background: #408cdc;
   box-sizing: border-box;
+  z-index: 1000; /* Ensure it's above other elements */
 }
