@@ -23,7 +23,7 @@
     <h1 class="wsite-title">Theme Park Group</h1>
   </div>
 
-  <div class="nav" id="links">
+  <div class="nav-list" id="links">
     <ul class="wsite-menu">
       <li id="pg0" class="wsite-menu-item-wrap wsite-nav-1">
         <a href="/index.html" target="_parent" class="wsite-menu-item">
@@ -58,17 +58,15 @@
 
 <script>
   function hideHamburger() {
-    var nav = document.querySelector(".nav");
-    var top = document.querySelector(".lefthand-logo");
+    var nav = document.querySelector(".nav-list");
+    var top = document.querySelector(".header-container");
     // Check if the element has the .hidden class
-    if (nav.classList.contains("shown")) {
+    if (top.classList.contains("nav-open")) {
       // Remove the .hidden class
-      nav.classList.remove("shown");
-      top.classList.remove("hide");
+      top.classList.remove("nav-open");
     } else {
       // Add the .hidden class
-      nav.classList.add("shown");
-      top.classList.add("hide");
+      top.classList.add("nav-open");
     }
   }
 </script>
