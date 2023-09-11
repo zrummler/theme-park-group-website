@@ -52,20 +52,20 @@
     <span class="middle-line"></span>
     <span class="bottom-line"></span>
   </label>
-  </a>
 </div>
 
 <script>
   function hideHamburger() {
-    var nav = document.querySelector(".nav-list");
     var top = document.querySelector(".header-container");
     // Check if the element has the .hidden class
     if (top.classList.contains("nav-open")) {
       // Remove the .hidden class
       top.classList.remove("nav-open");
+      top.classList.remove("lefthand-logo");
     } else {
       // Add the .hidden class
       top.classList.add("nav-open");
+      top.classList.add("lefthand-logo");
     }
   }
 </script>
