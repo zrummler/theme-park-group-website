@@ -48,34 +48,34 @@
   /* Style for the navigation menu */
   text-align: right;
   margin-left: auto;
+}
 
-  /* Style for the menu items */
-  .wsite-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
+/* Style for the menu items */
+.wsite-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
 
-  .wsite-menu-item {
-    font-family: "Montserrat";
-    margin-right: 20px;
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
+.wsite-menu-item {
+  font-family: "Montserrat";
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
 
-    /* Add padding to create a larger white box around text */
-    padding: 5px 15px; /* Adjust these values as needed */
-    transition: outline 0.3s; /* Add a smooth transition effect */
-  }
+  /* Add padding to create a larger white box around text */
+  padding: 5px 15px; /* Adjust these values as needed */
+  transition: outline 0.3s; /* Add a smooth transition effect */
+}
 
-  /* Style for the white box on hover */
-  .wsite-menu-item:hover {
-    outline: 3px solid white; /* Add a white border on hover */
-  }
+/* Style for the white box on hover */
+.wsite-menu-item:hover {
+  outline: 3px solid white; /* Add a white border on hover */
 }
 
 .hamburger-icon {
@@ -136,7 +136,7 @@
 
   /* Styling for the open hamburger icon */
   .header-container.nav-open .hamburger span {
-    transition: all 200ms ease-in-out;
+    transition: 200ms ease-in-out;
   }
 
   .header-container.nav-open .hamburger span::before {
@@ -164,7 +164,7 @@
     flex-direction: column; /* Use 'column' instead of 'vertical' */
     align-items: center;
     width: 100%;
-    height: 50%;
+    height: 70%;
     padding: 80px;
   }
 
@@ -178,6 +178,11 @@
     align-items: center;
     box-sizing: border-box;
     flex: 1; /* Expand to fill available vertical space */
+  }
+
+  .wsite-menu-item {
+    font-size: 40px;
+    transition: 300ms ease-in-out;
   }
 }
 
