@@ -90,13 +90,61 @@
   }
 
   /* shop the hamburger icon in its place */
-  .hamburger-icon {
+  label.hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+
+  /* styling for the closed hamburger icon below!! */
+  label.hamburger span {
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+  }
+
+  label.hamburger span::before {
+    top: -6px; /* Adjust this value to position the middle line */
+    box-shadow: 0 7px 0 white;
+  }
+
+  label.hamburger span::after {
+    top: 6px; /* Adjust this value to position the middle line */
+  }
+
+  label.hamburger span::before,
+  label.hamburger span::after {
+    position: relative;
     display: block;
-    color: white;
-    position: absolute; /* Position it absolutely */
-    top: 40px; /* Adjust the top position as needed */
-    right: 20px; /* Adjust the left position as needed */
-    margin-left: 20px;
+    width: 22px;
+    height: 2px;
+    background: #ffffff;
+    content: "";
+  }
+
+  /* Styling for the open hamburger icon */
+  .header-container.nav-open .hamburger span {
+    transition: all 200ms ease-in-out;
+  }
+
+  .header-container.nav-open .hamburger span::before {
+    top: 1px;
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  .header-container.nav-open .hamburger span::after {
+    top: -1px;
+    transform: rotate(135deg);
   }
 
   .header-container.nav-open {
