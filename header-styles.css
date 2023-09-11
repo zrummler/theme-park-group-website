@@ -99,13 +99,12 @@
     padding: 10px;
     margin: 20px;
     cursor: pointer;
-    transition: all 300ms ease-in-out;
   }
 
   /* styling for the closed hamburger icon below!! */
   label.hamburger span {
     position: absolute;
-    top: 5px;
+    top: 10px;
     left: 2px;
     width: 30px;
     height: 30px;
