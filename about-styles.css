@@ -21,7 +21,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: auto; /* Set the height as needed */
+  height: 100%; /* Set the height as needed */
   z-index: 999; /* Ensure it's above other elements */
 }
 
