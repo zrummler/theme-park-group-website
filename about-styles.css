@@ -92,3 +92,9 @@
     margin: 20px;
   }
 }
+
+@media (max-width: 500px) {
+  .about-image {
+    margin-top: 80px;
+  }
+}
