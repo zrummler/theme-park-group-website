@@ -30,7 +30,7 @@
   flex-grow: 1; /* Allow the image to grow and take available space */
   height: 0; /* Set initial height to 0 */
   text-align: center;
-  padding-bottom: 100%; /* Maintain a 16:9 aspect ratio for the image */
+  padding-bottom: 100%;
   overflow: hidden;
 }
 
